@@ -15,18 +15,51 @@
     ##     ## ##     ##    ##       ##    ##     ## ##   ###
     ########   #######     ##       ##     #######  ##    ##
   */
-
 #button {
-  height          : 7vh !important;
-  width           : 7vh !important;
-  background-color: red;
+  padding-top: 1px;
+  z-index    : 10000;
+  height     : 7vh !important;
+  width      : 7vh !important;
+  padding    : 0;
+  margin     : 0;
 }
 
-#button:checked ~ #aoa {
+#button:checked ~ #menu {
+  /* show menu*/
+  visibility      : visible;
   height          : 10vh;
   width           : 10vh;
   background-color: red;
 }
 /*
 ################################################################################
+
+
+################################################################################
+
+    ##     ## ######## ##    ## ##     ##
+    ###   ### ##       ###   ## ##     ##
+    #### #### ##       ####  ## ##     ##
+    ## ### ## ######   ## ## ## ##     ##
+    ##     ## ##       ##  #### ##     ##
+    ##     ## ##       ##   ### ##     ##
+    ##     ## ######## ##    ##  #######
   */
+
+#menu {
+  /* hide menu */
+  visibility: hidden;
+  z-index   : 1;
+  margin-top: -7.5vh;
+}
+
+#upperCOL {
+  margin-top: 7.5vh;
+}
+
+#abc {
+  padding-top: 80vh;
+}
+/*
+################################################################################
+*/
